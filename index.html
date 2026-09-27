@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nothing's Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <p>Purchase Over $300 For Free Shipping</p>
+        <p>Contact <a href="tel:0123456789">+60123456789</a> For More Details</p>
+    </header>
+    <nav>
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo" onmouseover="logo_change_background()" onmouseleave="default_background()">
+            <h3 id="promotion_section">Nothing's</h3>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#promotion_section">Promotion</a></li>
+            <li><a href="#gender_section">Men</a></li>
+            <li><a href="#gender_section">Woman</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#container_section">Cart</a>
+                <span class="quantity_count">
+                    <span class="quantity_value">$0.00</span>
+                </span>
+            </li>
+        </ul>
+    </nav>
+    <aside>
+        <picture>
+            <img class="promotion_image" src="./image/enlarged.jpg" alt="">
+        </picture>
+        <div class="shop_now">
+            <a href="#gender_section">Shop Now</a>
+        </div>
+    </aside>
+    <br>
+    <main>
+        <h1 id="gender_section">Test</h1>
+        <div class="gender">
+            <a href="#container_section" onmouseover="women_mouseover()" onmouseleave="default_background()">
+                <div class="gender_box women_box" title="Women"><img src="./image/female_div.jpg" alt="women_image"></div>
+            </a>
+            <a href="#container_section" onmouseover="men_mouseover()" onmouseleave="default_background()">
+                <div class="gender_box men_box" title="Men"><img src="./image/male_div.jpg" alt="men_image"></div>
+            </a>
+        </div>
+        <div class="gender_label">
+            <h2>Women</h2>
+            <h2>Men</h2>
+        </div>
+        <fieldset id="container_section">
+            <legend>Customise Your Shirt With Us!</legend>
+                <div class="two_container">
+                    <div class="garment">
+                        <div class="garment_selection">
+                            <p>Pick Any Of The Option Below</p>
+                        </div>
+                        <div class="tee_shirt garment_image" data-price="30" alt="Tee shirt" onmouseout="default_background()">
+                            <picture>
+                                <img src="./image/tshirt.jpg" alt="Tee shirt">
+                                <img src="./image/tshirt_2.jpg" alt="Tee shirt">
+                            </picture>
+                            <h2>Tee Shirt ($30)</h2>
+                        </div>
+                        <div class="polo_shirt garment_image" data-price="50" alt="Polo shirt" onmouseout="default_background()">
+                            <picture>
+                                <img src="./image/poloshirt2.jpg" alt="Polo shirt">
+                                <img src="./image/poloshirt.jpg" alt="Polo shirt">
+                            </picture>
+                            <h2>Polo Shirt ($50)</h2>
+                        </div>
+                        <div class="button_up garment_image" data-price="80" alt="Button up" onmouseout="default_background()">
+                            <picture>
+                                <img src="./image/buttonup.jpg" alt="Button up">
+                                <img src="./image/buttonup_2.jpg" alt="Button up">
+                            </picture>
+                            <h2>Button Up ($80)</h2>
+                        </div>
+                        <div class="hoodie garment_image" data-price="100" alt="Hoodie" onmouseout="default_background()">
+                            <picture>
+                                <img src="./image/hoodie.jpg" alt="Hoodie">
+                                <img src="./image/hoodie_2.jpg" alt="Hoodie">
+                            </picture>
+                            <h2> Hoodie ($100)</h2>
+                        </div>
+                    </div>
+                    <div class="design_selection">
+                        <h2>Select Design</h2>
+                        <div class="provided_design">
+                            <div class="design_idea" onmouseout="default_background()">
+                                <picture>
+                                    <img src="./image/tile1.png" alt="design_idea_1">
+                                </picture>
+                                <span>Design 1</span>
+                            </div>
+                            <div class="design_idea" onmouseout="default_background()">
+                                <picture>
+                                    <img src="./image/tile2.png" alt="design_idea_1">
+                                </picture>
+                                <span>Design 2</span>
+                            </div>
+                            <div class="design_idea" onmouseout="default_background()">
+                                <picture>
+                                    <img src="./image/tile3.png" alt="design_idea_1">
+                                </picture>
+                                <span>Design 3</span>
+                            </div>
+                            <div class="design_idea" onmouseout="default_background()">
+                                <picture>
+                                    <img src="./image/tile4.png" alt="design_idea_1">
+                                </picture>
+                                <span>Design 4</span>
+                            </div>
+                            <div class="design_idea" onmouseout="default_background()">
+                                <picture>
+                                    <img src="./image/tile5.png" alt="design_idea_1">
+                                </picture>
+                                <span>Design 5</span>
+                            </div>
+                            <div class="design_idea" onmouseout="default_background()">
+                                <picture>
+                                    <img src="./image/tile6.png" alt="design_idea_1">
+                                </picture>
+                                <span>Design 6</span>
+                            </div>
+                        </div>
+                        <br>
+                        <table>
+                            <tr>
+                                <td><label for="for_design_option">Please select your design</label></td>
+                                <td><div class="dropdown_menu">
+                                        <div class="for_select">
+                                            <span class="selected">Select Any Option</span>
+                                            <span class="dropdown_arrow"></span>
+                                        </div>
+                                        <ul>
+                                            <li class="selected">Select Any Option</li>
+                                            <li data-select="30" alt="Design 1">Design 1 ($30)</li>
+                                            <li data-select="35" alt="Design 2">Design 2 ($35)</li>
+                                            <li data-select="20" alt="Design 3">Design 3 ($20)</li>
+                                            <li data-select="35" alt="Design 4">Design 4 ($35)</li>
+                                            <li data-select="30" alt="Design 5">Design 5 ($30)</li>
+                                            <li data-select="30" alt="Design 6">Design 6 ($30)</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="user_upload">Other Option: ($40)</label></td>
+                                <td><input type="file" value="40" name="user_upload" id="user_design_upload"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="with_logo">Include Logo ($15) : </label></td>
+                                <td><input type="checkbox" id="with_logo" class="include_logo" value="15"></td>
+                            </tr>
+                        </table>
+                        <br>
+                        <div id="total_without_discount">
+                            <span for="calculate_total">Your Cart ($) : $
+                                <input type="number" name="calculate_user_selection_total" value="0.00" id="calculate_total" class="calculate_total_style" disabled>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+        </fieldset>
+        <div class="proceed_payment">
+            <h2></h2>
+            <a href="#total_section_id" onclick="totalPayment()"><button>Proceed To Payment</button></a>
+        </div>
+
+    </main>
+    <div class="total_section" id="total_section_id">
+        <h1 id="cart_section">Bill</h1>
+        <table class="totalPayment_table">
+            <tr>
+                <th>Garment</th>
+                <th>Design</th>
+                <th>Add-on Price</th>
+                <th>Logo Price</th>
+                <th>Discount</th>
+                <th>Total After discount (If Eligible)</th>
+            </tr>
+        </table>
+        <input type="button" value="Pay" onclick="pay_clicked()" id="pay_button">
+    </div>
+
+    <script type="text/javascript" src="js/website.js"></script>
+</body>
+</html>
